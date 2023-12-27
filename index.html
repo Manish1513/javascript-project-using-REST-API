@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce page</title>
+</head>
+<body>
+    <h1>E-commerce website</h1>
+
+    <form onsubmit="saveToLocalStorage(event)">
+        <label for="sellingPrice">Selling Price</label>
+        <input type="number" id="sellingPrice" placeholder="" required>
+
+        <label for="productName">Product Name</label>
+        <input type="text" id="productName" placeholder="" required>
+
+        <button type="submit">Add Item</button>
+    </form>
+
+
+    <ul id="ListOfProducts">Products Detail</ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.3/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
